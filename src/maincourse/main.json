@@ -1,0 +1,75 @@
+[
+    {
+        "id": "21",
+        "name": "Mexican Ensalada",
+        "source": "Yuri Elkaim",
+        "preptime": 0,
+        "waittime": 0,
+        "cooktime": 0,
+        "servings": 2,
+        "comments": "",
+        "calories": 1335,
+        "fat": 62,
+        "satfat": 9,
+        "carbs": 172,
+        "fiber": 37,
+        "sugar": 13,
+        "protein": 35,
+        "instructions": "In small bowl, whisk together dressing ingredients. \n \nChop up additional ingredients bite size and add to a medium bowl. \n \nCombine dressing and all ingredients in a large bowl, toss, and serve. \n \nIncludes recipe for [basil-lime vinaigrette](http:\/\/www.xanthir.com\/recipes\/showrecipe.php?id=id6). \n \nAlternate dressing (for 2 servings): \n1/2 lemon, juiced; 1 tbsp apple cider vinegar; 2 tbsp olive oil; 2 tablespoons cilantro, chopped",
+        "ingredients": [
+            "100 gram lime, zested and juiced ",
+            "1 tablespoon balsamic vinegar ",
+            "0.25 cup basil leaves, chopped ",
+            "0.5 teaspoon cumin ",
+            "2 tablespoon extra-virgin olive oil ",
+            "1 teaspoon Kosher salt and freshly ground black pepper ",
+            "0.5 cup cucumber, cubed ",
+            "1 cup avocado, cubed ",
+            "1 cup red bell pepper, cubed ",
+            "0.5 cup black beans, rinsed and drained ",
+            "1 cup tomato, cubed ",
+            "0.5 cup brown rice, cooked"
+        ],
+        "tags": [
+            "salad",
+            "mexican",
+            "FUF",
+            "main",
+            "vegetarian"
+        ]
+    },
+    {
+        "id": "63",
+        "name": "Stove top mac and cheese",
+        "source": "Alton Brown",
+        "preptime": 0,
+        "waittime": 0,
+        "cooktime": 0,
+        "servings": 6,
+        "comments": "",
+        "calories": 0,
+        "fat": 0,
+        "satfat": 0,
+        "carbs": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "protein": 0,
+        "instructions": "In a large pot of boiling, salted water cook the pasta to al dente and drain. Return to the pot and melt in the butter. Toss to coat. \n \nWhisk together the eggs, milk, hot sauce, salt, pepper, and mustard. Stir into the pasta and add the cheese. Over low heat continue to stir for 3 minutes or until creamy. \n \n(This recipe originally called for 6oz milk.  It is reduced as an experiment.)",
+        "ingredients": [
+            "1 tablespoon Fresh black pepper ",
+            "1 teaspoon kosher salt ",
+            "0.5 teaspoon hot sauce ",
+            "4 ounce evaporated milk ",
+            "4 tablespoon butter ",
+            "450 gram elbow macaroni ",
+            "0.24 teaspoon dry mustard ",
+            "10 ounce sharp cheddar, shredded"
+        ],
+        "tags": [
+            "cheese",
+            "noodles",
+            "main",
+            "vegetarian"
+        ]
+    }
+]

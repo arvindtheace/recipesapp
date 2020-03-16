@@ -1,0 +1,62 @@
+[
+    {
+        "id": "id9",
+        "name": "Natural sports drink",
+        "source": "Yuri Elkhaim",
+        "preptime": 0,
+        "waittime": 0,
+        "cooktime": 0,
+        "servings": 1,
+        "comments": "",
+        "calories": 168,
+        "fat": 0,
+        "satfat": 0,
+        "carbs": 44,
+        "fiber": 0,
+        "sugar": 36,
+        "protein": 0,
+        "instructions": "Mix together",
+        "ingredients": [
+            "2 cups water",
+            "2 cups lemon, juiced",
+            "2 cups lime, juiced",
+            "4 tablespoon maple syrup",
+            "1 teaspoon sea salt"
+        ],
+        "tags": [
+            "FUF",
+            "drink"
+        ]
+    },
+    {
+        "id": "id194",
+        "name": "Salted chocolate milk",
+        "source": "Food Network Magazine May 2011",
+        "preptime": 300,
+        "waittime": 1800,
+        "cooktime": 300,
+        "servings": 4,
+        "comments": "",
+        "calories": 0,
+        "fat": 0,
+        "satfat": 0,
+        "carbs": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "protein": 0,
+        "instructions": "1. Make the chocolate syrup: combine the sugar and water in a small saucepan. Bring to a simmer over medium heat, then whisk in the cocoa powder until smooth. Remove from the heat and stir in the vanilla. Let cool completely.\n\n2. Spoon about 2.5 tbsp of the chocolate syrup into each glass. Add 1 1/2 cups milk and a generous pinch of salt. Stir until the syrup and salt dissolves.",
+        "ingredients": [
+            "0.5 cup sugar",
+            "0.5 cup water",
+            "0.33 cup unsweetened cocoa powder",
+            "0.5 teaspoon vanilla extract",
+            "6 cup cold milk",
+            "1 teaspoon Kosher salt"
+        ],
+        "tags": [
+            "drink",
+            "chocolate",
+            "untried"
+        ]
+    }
+]
