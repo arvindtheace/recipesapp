@@ -1,28 +1,40 @@
 import React, { Component } from 'react';
-import data from './stater.json';
 import ItemList from '../ItemList';
 
 import { toast } from 'react-toastify';
 
-class Starters extends Component {
+import './Items.scss';
+
+class Items extends Component {
     constructor(props) {
         super();
-        let initialState = data.map(item => {
+        this.state = { values: this.getValues(props) };
+    }
+    getValues = (props) => {
+        let values = props.data.map(item => {
             return {
                 name: item.name,
-                servings: 0
+                servings: 0,
+                ingredients: item.ingredients
             }
         })
         if(props.state.length > 0) {
-            initialState = props.state.map(item => {
+            values = props.state.map(item => {
                 return {
                     name: item.name,
-                    servings: item.servings
+                    servings: item.servings,
+                    ingredients: item.ingredients
                 }
             })
         }
-        this.state = { values: initialState };
+        return values;
     }
+    componentDidUpdate(prevProps) {
+        if(prevProps.title !== this.props.title) {
+            console.log(prevProps.title, this.props.title);
+            this.setState({ values: this.getValues(this.props) });
+        }
+      }
     isValidated() {
         const { values } = this.state;
         const isValid = values.some(value => value.servings > 0) ? true: false;
@@ -33,8 +45,8 @@ class Starters extends Component {
     render() {
         return (
             <div>
-                <h1>Starter</h1>
-                <ItemList data={data} values={this.state.values} onChange={(index, servings) => {
+                <h1>{this.props.title}</h1>
+                <ItemList data={this.props.data} values={this.state.values} onChange={(index, servings) => {
                     const { values } = this.state;
                     values[index].servings = servings;
                     this.setState({ values });
@@ -44,4 +56,4 @@ class Starters extends Component {
     }
 }
 
-export default Starters;
+export default Items;
