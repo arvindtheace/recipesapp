@@ -15,7 +15,8 @@ class Items extends Component {
             return {
                 name: item.name,
                 servings: 0,
-                ingredients: item.ingredients
+                ingredients: item.ingredients,
+                minServing: item.servings
             }
         })
         if(props.state.length > 0) {
@@ -23,7 +24,8 @@ class Items extends Component {
                 return {
                     name: item.name,
                     servings: item.servings,
-                    ingredients: item.ingredients
+                    ingredients: item.ingredients,
+                    minServing: item.minServing
                 }
             })
         }
@@ -31,7 +33,6 @@ class Items extends Component {
     }
     componentDidUpdate(prevProps) {
         if(prevProps.title !== this.props.title) {
-            console.log(prevProps.title, this.props.title);
             this.setState({ values: this.getValues(this.props) });
         }
       }

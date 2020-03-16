@@ -66,7 +66,7 @@ class App extends Component {
           />
         },
         {
-          name: 'Summary', component: <Summary data={this.state}/>
+          name: 'Summary', component: <Summary summaryData={this.state}/>
         }
       ]
     console.log('state is ', this.state);
