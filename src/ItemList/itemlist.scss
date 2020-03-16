@@ -1,0 +1,13 @@
+.recipe-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe-name, .recipe-min-serving {
+  flex: 0 0 25%;
+}

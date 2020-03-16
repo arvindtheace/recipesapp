@@ -13,7 +13,7 @@ import dessertData from './data/dessert.json';
 import Items from "./Items/Items";
 import Summary from "./Summary";
 import { ToastContainer } from 'react-toastify';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   constructor() {
@@ -69,15 +69,14 @@ class App extends Component {
           name: 'Summary', component: <Summary summaryData={this.state}/>
         }
       ]
-    console.log('state is ', this.state);
     return (
       <Container fluid>
         <h1 className="header">Welcome to our Restaurant!</h1>
-        <Row className="justify-content-md-center">
+        <div className="stepsContainer justify-content-md-center">
           <div className='step-progress p-5'>
             <StepZilla steps={steps} />
           </div>
-        </Row>
+        </div>
         <ToastContainer />
       </Container>
     )
