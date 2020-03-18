@@ -8,6 +8,10 @@
   justify-content: space-between;
 }
 
-.recipe-name, .recipe-min-serving {
+.recipe-name {
+  flex: 0 0 25%;
+}
+
+.recipe-min-serving {
   flex: 0 0 25%;
 }

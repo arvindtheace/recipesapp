@@ -1,8 +1,6 @@
 import React from 'react';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import Counter from './Counter';
-
+import DetailsModal from './DetailsModal';
 import './itemlist.scss';
 
 const ItemList = ({ data, values, onChange }) => {
@@ -23,7 +21,7 @@ const ItemList = ({ data, values, onChange }) => {
                 <div key={option.id}>
                     <div className="recipe-body">
                         <div className="recipe-name">
-                            <label htmlFor={option.name}>{option.name}</label>
+                            <DetailsModal data={option}/>
                         </div>
                         <div className="recipe-min-serving">
                             <label htmlFor={option.servings}>{option.servings}</label>

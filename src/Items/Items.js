@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import ItemList from '../ItemList';
 
-import { toast } from 'react-toastify';
-
 import './Items.scss';
 
 class Items extends Component {
@@ -36,13 +34,13 @@ class Items extends Component {
             this.setState({ values: this.getValues(this.props) });
         }
       }
-    isValidated() {
-        const { values } = this.state;
-        const isValid = values.some(value => value.servings > 0) ? true: false;
-        isValid ? this.props.updateState(values) : toast.error('Please select at least one item serving')
-        return isValid;
+    // isValidated() {
+    //     const { values } = this.state;
+    //     const isValid = values.some(value => value.servings > 0) ? true: false;
+    //     isValid ? this.props.updateState(values) : toast.error('Please select at least one item serving')
+    //     return isValid;
         
-    }
+    // }
     render() {
         return (
             <div>
@@ -50,7 +48,9 @@ class Items extends Component {
                 <ItemList data={this.props.data} values={this.state.values} onChange={(index, servings) => {
                     const { values } = this.state;
                     values[index].servings = servings;
-                    this.setState({ values });
+                    this.setState({ values }, ()=> {
+                        this.props.updateState(values);
+                    });
                 }} />
             </div>
         )

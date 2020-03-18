@@ -40,14 +40,14 @@ const Summary = ({ summaryData }) => {
         <div>
             <h1>Summary</h1>
             <Row>
-                {summary.map((item) => (
-                    <Col sm={6}>
+                {summary.map((item, index) => (
+                    <Col key={index} sm={6}>
                         <h2>{item.type}</h2>
-                        {item.values.map((dish) => (
-                            <div sm={6}>
+                        {item.values.map((dish, index) => (
+                            <div sm={6} key={index}>
                                 <h3>{dish.name}</h3>
                                 <ul>
-                                    {dish.ingredients.map(ingredient => (<li>{ingredient}</li>))}
+                                    {dish.ingredients.map(ingredient => (<li key={ingredient}>{ingredient}</li>))}
                                 </ul>
                             </div>
                         ))}
